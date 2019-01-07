@@ -1,0 +1,31 @@
+shaked.weitz, yardental
+206093403, 203730700
+Shaked Weitz, Yarden Tal
+
+I discussed the exercise with:
+
+=============================
+=  README for ex9: ship.py, asteroid.py, torpedo.py, asteroids_main.py =
+=============================
+
+==================
+=  Description:  =
+==================
+* a class of a spaceship for asteroids game
+* a class of an asteroid
+* a class of a torpedo
+* runs an asteroids game, has one spaceship that can shoot torpedoes at asteroids until all asteroids
+ are gone before they hit you and ship life is ended
+======================
+=  Special Comments  =
+======================
+* we chose to define the move function in asteroids_main. the alternative option was to move each
+  object in their own class. it's advantage is that you don't have to assume all object classes have the same
+  coordinates structure and get and set functions. we chose the other option because we wrote the other classes and
+  a same structure is  more convenient and clear.
+* we chose to use a list for objects in the game. the alternative option was to use a dictionary. it's advantage is
+  that you could store all asteroid information in the dictionary instead of calling each one with a function.
+  we chose a list because it uses less memory, we don't need all information all the time.
+* we chose to use a tuple for x and y coordinates and speed at each axis. the alternative option is to use
+  parameters for each one. it's advantage is that you can call the parameter directly and won't have to unpack
+  a tuple. we chose to use a tuple because they are immutable, so it prevents unwanted changes.
